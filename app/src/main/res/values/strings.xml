@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="list_name">List name</string>
+    <string name="my_current_books">My current books</string>
+    <string name="short_description">Short Description</string>
+    <string name="add_some_description_to_this_list">Add some description to this list</string>
+    <string name="my_lists">My Lists</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_to_library">Add to Library</string>
+    <string name="close">Close</string>
+</resources>

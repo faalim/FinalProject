@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateNewListFragment">
+
+
+    <TextView
+        android:id="@+id/listT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="times"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@id/listEdit"
+        app:layout_constraintHorizontal_chainStyle="packed"
+/>
+
+    <EditText
+        android:id="@+id/listEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="times"
+        android:hint="@string/my_current_books"
+        app:layout_constraintBottom_toTopOf="@id/shortDescrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/listT" />
+
+    <TextView
+        android:id="@+id/shortDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="times"
+        android:text="@string/short_description"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editShortDescrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listEdit"
+        />
+
+    <EditText
+        android:id="@+id/editShortDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="times"
+        android:hint="@string/add_some_description_to_this_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shortDescrip"
+       />
+
+
+    <Button
+        android:id="@+id/saveList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@id/editShortDescrip"
+        app:layout_constraintStart_toEndOf="@id/cancelList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <Button
+        android:id="@+id/cancelList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toBottomOf="@id/editShortDescrip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/saveList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

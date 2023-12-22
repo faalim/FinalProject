@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinalProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your dark theme here. -->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_dark_primary</item> &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/basilGreen</item> &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/basilOrange</item>-->
+<!--        <item name = "android:background">@color/creamBack</item>-->
+
+<!--        <item name = "android:textColor">@color/greentxt</item>-->
+    </style>
+</resources>

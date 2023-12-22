@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/platinum">
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/selectedBookImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="times"
+         android:background="@color/platinum"
+        android:textColor="@color/basilOrange"
+        />
+
+    <ImageView
+
+        android:id="@+id/selectedBookImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rank"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="351dp"
+
+        />
+
+    <TextView
+        android:id="@+id/fistTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/secTextView"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="times"
+        android:textColor="@color/basilOrange"
+        android:background="@color/platinum"
+        android:layout_marginStart="5dp"
+
+        />
+    <TextView
+        android:id="@+id/secTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fistTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/thirdTextView"
+        android:textSize="15sp"
+        android:fontFamily="times"
+        android:background="@color/platinum"
+        android:layout_marginStart="5dp"
+
+        />
+    <TextView
+        android:background="@color/platinum"
+           android:layout_marginStart="5dp"
+        android:id="@+id/thirdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/secTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:fontFamily="times"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
